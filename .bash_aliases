@@ -1,6 +1,9 @@
 alias avenv="source venv/bin/activate"
 alias ..="cd .."
 alias la="ls -a"
+alias nvc="cd ~/.config/nvim"
+alias ph="cd ~/p"
+alias sourceme="source ~/.bashrc"
 
 mcd () {
 	mkdir -p -- $1

@@ -34,6 +34,13 @@ return require("packer").startup(function(use)
         run = ":TSUpdate"
     })
 
+    -- GitSigns
+    use {
+      'lewis6991/gitsigns.nvim',
+      -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
+    }
+    require('gitsigns').setup()
+
     -- Full-stack Dev
     use 'pangloss/vim-javascript' --JS support
     use 'leafgarland/typescript-vim' --TS support
