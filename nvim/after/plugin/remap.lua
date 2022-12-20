@@ -15,5 +15,5 @@ map('n', '<Tab>', '>>', {noremap = true, silent = false})
 map('n', '<S-Tab>', '<<', {noremap = true, silent = false})
 
 -- Navigation remaps
-map('n', '-', ':bn<CR>', {noremap = true, silent = false})
-map('n', '_', ':bp<CR>', {noremap = true, silent = false})
+map('n', '<leader>-', ':bn<CR>', {noremap = true, silent = false})
+map('n', '<leader>_', ':bp<CR>', {noremap = true, silent = false})
