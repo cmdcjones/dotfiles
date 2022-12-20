@@ -16,6 +16,16 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   ['<C-y>'] = cmp.mapping.confirm({ select = true }),
   ["<C-Space>"] = cmp.mapping.complete(),
 })
+local cmp_kw_length = cmp.setup({
+    sources = {
+        { 
+            name = 'buffer',
+            option = {
+                keyword_length = 1
+            },
+        },
+    },
+})
 
 lsp.set_preferences({
   sign_icons = { }
