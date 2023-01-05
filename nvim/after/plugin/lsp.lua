@@ -14,20 +14,19 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
   ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
   ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-  ["<C-Space>"] = cmp.mapping.complete(),
-})
-local cmp_kw_length = cmp.setup({
-    sources = {
-        { 
-            name = 'buffer',
-            option = {
-                keyword_length = 1
-            },
-        },
-    },
+  ['<C-Space>'] = cmp.mapping.complete(),
+  ['<C-g>'] = cmp.mapping.scroll_docs(-2),
+  ['<C-d>'] = cmp.mapping.scroll_docs(2),
 })
 
 lsp.set_preferences({
+--  suggest_lsp_servers = true,
+--  setup_servers_on_start = true,
+--  set_lsp_keymaps = true,
+--  configure_diagnostics = true,
+--  cmp_capabilities = true,
+--  manage_nvim_cmp = true,
+--  call_servers = 'local',
   sign_icons = { }
 })
 

@@ -55,7 +55,6 @@ return require("packer").startup(function(use)
     use ("mfussenegger/nvim-lint")
 
     -- Colorscheme
-    use("folke/tokyonight.nvim")
     use({"catppuccin/nvim", as = "catppuccin" })
     use({"rose-pine/neovim", as = "rose-pine" })
     
@@ -63,6 +62,7 @@ return require("packer").startup(function(use)
     use("nvim-treesitter/nvim-treesitter", {
         run = ":TSUpdate"
     })
+    use ("nvim-treesitter/nvim-treesitter-context")
 
     -- GitSigns
     use {
