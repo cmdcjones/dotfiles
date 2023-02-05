@@ -12,5 +12,5 @@ mcd () {
 }
 
 cloneme () {
-	git clone https://github.com/cmdcjones/$1.git
+	git clone git@github.com:cmdcjones/food-review.git
 }

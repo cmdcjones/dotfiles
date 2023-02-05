@@ -127,3 +127,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 . "$HOME/.cargo/env"
+
+# pnpm
+export PNPM_HOME="/home/domecj/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
