@@ -12,5 +12,14 @@ mcd () {
 }
 
 cloneme () {
-	git clone git@github.com:cmdcjones/food-review.git
+	git clone git@github.com:cmdcjones/$1.git
+}
+
+storeproj () {
+    export CPJ=$PWD
+    echo "Path to project stored"
+}
+
+cdproj () {
+    cd $CPJ
 }
