@@ -23,3 +23,7 @@ storeproj () {
 cdproj () {
     cd $CPJ
 }
+
+vim () {
+    nvim $1
+}
