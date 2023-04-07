@@ -1,10 +1,10 @@
 alias avenv="source venv/bin/activate"
 alias ..="cd .."
-alias la="ls -a"
+alias la="ls -a --color=auto"
+alias ll="ls -al --color=auto"
+alias ls="ls --color=auto"
 alias nvc="cd ~/.config/nvim"
-alias ph="cd ~/p"
 alias sourceme="source ~/.bashrc"
-alias mh="cd /mnt/c/Users/15712/Media"
 
 mcd () {
 	mkdir -p -- $1
